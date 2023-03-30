@@ -1,5 +1,6 @@
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 
 public class CashbackHackServiceTest {
     @Test
@@ -8,7 +9,6 @@ public class CashbackHackServiceTest {
 
         int expected = 300;
         int actual = service.remain(700);
-
 
         Assert.assertEquals(actual,expected);
         }
